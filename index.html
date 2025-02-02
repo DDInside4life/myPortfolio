@@ -19,15 +19,27 @@
   </head>
   <link rel="stylesheet" href="./styles/main.css" />
   <link rel="stylesheet" href="./styles/reset.css" />
-  <body>
+  <body class="light">
     <nav class="nav">
       <div class="container">
         <div class="nav-row">
-          <div class="nav-logo">
-            <a href="./index.html" class="logo">
-              <img src="img/Logo-removebg-preview.png" alt=""
-            /></a>
-          </div>
+          <a href="./index.html" class="logo">
+            <img src="img/Logo-removebg-preview.png" alt=""
+          /></a>
+
+          <button class="dark-mode-btn">
+            <img
+              src="./img/icons/Sun.svg"
+              alt="Light mode"
+              class="dark-mode-btn__icon"
+            />
+            <img
+              src="./img/icons/Moon.svg"
+              alt="Dark mode"
+              class="dark-mode-btn__icon"
+            />
+          </button>
+
           <div class="nav-list">
             <div class="nav-list__item nav-list__item--active">
               <a href="./index.html" class="nav-list__link"> Projects</a>
@@ -57,9 +69,7 @@
 
         <div class="content__button">
           <button class="button">
-            <a class="button__link " href=""
-              >Download CV</a
-            >
+            <a class="button__link" href="">Download CV</a>
           </button>
         </div>
       </div>
@@ -127,10 +137,12 @@
             </li>
           </ul>
           <div class="copywrite">
-            <p>© 2025 I'll never forget lovely Kristina</p>
+            <p>©2025</p>
           </div>
         </div>
       </div>
     </footer>
+
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
