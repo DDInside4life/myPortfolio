@@ -67,13 +67,53 @@ body {
   display: none !important;
 }
 
+/* Effects */
+
+/* #particles-js {
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+} */
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+#particles-js-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* pointer-events: none; */
+  z-index: 1;
+}
+
+.header {
+  position: relative;
+  overflow: hidden;
+  min-height: 695px;
+}
+
 /* General */
 
 .section {
   padding: 70px 0;
+
+  position: relative;
 }
 
-.tittle-1 {
+.title-1 {
   padding-bottom: 60px;
   font-size: 60px;
   font-weight: 700;
@@ -82,7 +122,7 @@ body {
   text-align: center;
 }
 
-.tittle-1:hover {
+.title-1:hover {
   color: rgba(255, 255, 255, 1);
   text-shadow: 0 0 7px #fff, 0 0 10px #2994d6, 0 0 21px #fff,
     0 0 42px rgba(0, 68, 255, 0.81), 0 0 82px rgb(0, 51, 255),
@@ -92,12 +132,44 @@ body {
   cursor: pointer;
 }
 
-.tittle-2 {
+.title-2,
+.title-2--front,
+.title-2--back {
   margin-bottom: 20px;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.3;
   text-align: center;
+}
+
+.title-2:hover {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 0 7px #fff, 0 0 10px #cf9f1a, 0 0 21px #fff,
+    0 0 42px rgba(227, 158, 19, 0.81), 0 0 82px rgb(221, 204, 54),
+    0 0 92px rgba(218, 198, 15, 0.756), 0 0 102px rgb(194, 199, 30),
+    0 0 151px rgb(212, 192, 16);
+
+  cursor: pointer;
+}
+
+.title-2--front:hover {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 0 7px #fff, 0 0 10px #21ca5a, 0 0 21px #fff,
+    0 0 42px rgba(13, 184, 44, 0.81), 0 0 82px rgb(31, 161, 74),
+    0 0 92px rgba(43, 224, 67, 0.756), 0 0 102px rgb(32, 208, 82),
+    0 0 151px rgb(27, 215, 58);
+
+  cursor: pointer;
+}
+
+.title-2--back:hover {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 0 7px #fff, 0 0 10px #d62949, 0 0 21px #fff,
+    0 0 42px rgba(232, 18, 25, 0.81), 0 0 82px rgb(213, 58, 58),
+    0 0 92px rgba(205, 31, 66, 0.756), 0 0 102px rgb(227, 42, 42),
+    0 0 151px rgb(196, 25, 45);
+
+  cursor: pointer;
 }
 
 /* Nav  */
@@ -125,7 +197,8 @@ body {
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 10px rgba(148, 152, 180, 0.881));
+  filter: drop-shadow(0 0 10px rgba(239, 240, 245, 0.881));
+  /* filter: drop-shadow(0 0 10px rgba(148, 152, 180, 0.881)); */
 }
 
 .nav-row {
@@ -239,6 +312,8 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center center;
+
+  position: relative;
 }
 
 .header__wrapper {

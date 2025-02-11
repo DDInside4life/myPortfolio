@@ -42,10 +42,10 @@
 
           <div class="nav-list">
             <div class="nav-list__item nav-list__item--active">
-              <a href="./index.html" class="nav-list__link"> Projects</a>
+              <a href="./index.html" class="nav-list__link"> Home</a>
             </div>
             <div class="nav-list__item">
-              <a href="./skills.html" class="nav-list__link">Skills</a>
+              <a href="./skills.html" class="nav-list__link">Projects</a>
             </div>
             <div class="nav-list__item">
               <a href="./contacts.html" class="nav-list__link">Contacts</a>
@@ -58,55 +58,35 @@
     <header class="header">
       <div class="header__wrapper">
         <h1 class="header__tittle">
-          <strong>Hi, my name is <em>Roman</em></strong>
+          <strong>Hi, my name is <em id="trigger-button">Roman</em></strong>
           <br />
           I'm a web-developer
         </h1>
-
         <div class="header__text">
           <p>with passion for learning and creating.</p>
         </div>
-
-        <div class="content__button">
-          <button class="button">
-            <a class="button__link" href="">Download CV</a>
-          </button>
-        </div>
       </div>
+      <!-- Контейнер для частиц -->
+      <div class="particles-js" id="particles-js"></div>
     </header>
 
     <main class="section">
       <div class="container">
-        <h2 class="tittle-1">Projects</h2>
-        <ul class="projects">
-          <li class="project">
-            <img src="./img/projects/07.jpg" alt="" class="project__img" />
-            <h3 class="project__tittle">Coming soon...</h3>
+        <h1 class="title-1">Skills</h1>
+
+        <ul class="content-list">
+          <li class="content-list__item">
+            <h2 class="title-2--front">Frontend</h2>
+            <p>
+              JavaScript, TypeScript, ReactJS, Angular, Redux, HTML, CSS, NPM,
+              <br />
+              BootStrap, MaterialUI, Yarn, TailwindCSS, StyledComponents
+            </p>
           </li>
 
-          <li class="project">
-            <img src="./img/projects/07.jpg" alt="" class="project__img" />
-            <h3 class="project__tittle">Coming soon...</h3>
-          </li>
-
-          <li class="project">
-            <img src="./img/projects/07.jpg" alt="" class="project__img" />
-            <h3 class="project__tittle">Coming soon...</h3>
-          </li>
-
-          <li class="project">
-            <img src="./img/projects/07.jpg" alt="" class="project__img" />
-            <h3 class="project__tittle">Coming soon...</h3>
-          </li>
-
-          <li class="project">
-            <img src="./img/projects/07.jpg" alt="" class="project__img" />
-            <h3 class="project__tittle">Coming soon...</h3>
-          </li>
-
-          <li class="project">
-            <img src="./img/projects/07.jpg" alt="" class="project__img" />
-            <h3 class="project__tittle">Coming soon...</h3>
+          <li class="content-list__item">
+            <h2 class="title-2--back">Backend</h2>
+            <p>NodeJS, MySQL, MongoDB, PHP, Laravel</p>
           </li>
         </ul>
       </div>
@@ -137,12 +117,14 @@
             </li>
           </ul>
           <div class="copywrite">
-            <p>©2025</p>
+            <p>© 2025 Roman's design</p>
           </div>
         </div>
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./scripts/particles.min.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>

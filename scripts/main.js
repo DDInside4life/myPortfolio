@@ -44,3 +44,25 @@ btnDarkMode.onclick = function () {
     localStorage.setItem("darkMode", "light");
   }
 };
+
+// Effects
+
+function changeId() {
+  // Находим элемент по текущему id
+  const element = document.getElementById("particles-js");
+
+  // Меняем его id на новый
+  element.id = "particles-js-2";
+}
+
+document
+  .getElementById("trigger-button")
+  .addEventListener("click", function () {
+    particlesJS.load("particles-js", "assets/particles.json", function () {
+      console.log("callback - particles.js config loaded");
+      changeId();
+
+      // Явно указываем, что события взаимодействия применяются к контейнеру
+      pJSDom[0].pJS.interactivity.el = document.getElementById("particles-js");
+    });
+  });
